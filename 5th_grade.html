@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Literary Lab</title>
+    <style>
+      /* Styles for the background image */
+      body {
+        background-image: url('lab.jpg'); /* Replace 'lab.jpg' with the path to your background image */
+        background-size: cover; /* Cover the entire background */
+        background-repeat: no-repeat; /* Do not repeat the background image */
+        font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+      }
+
+      /* Styles for the container */
+      .container {
+        position: relative; /* Relative positioning for the container */
+        width: 80%; /* Adjust the width as needed */
+        margin: 0 auto; /* Center the container */
+        padding: 20px; /* Add some padding */
+        background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+        border-radius: 10px; /* Rounded corners */
+        text-align: center; /* Center align text */
+      }
+
+      /* Styles for the bookshelf */
+      .bookshelf {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      /* Styles for the book */
+      .book {
+        margin: 10px;
+      }
+
+      /* Styles for the title */
+      h1 {
+        font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+      }
+
+      /* Styles for the back button */
+      .back-button {
+        position: absolute; /* Absolute positioning for the button */
+        top: 10px; /* Distance from the top */
+        right: 10px; /* Distance from the right */
+        color: inherit; /* Use the text color of the parent */
+        text-decoration: none; /* Remove underline */
+        padding: 5px 10px; /* Add padding */
+        border: 1px solid transparent; /* Hide border */
+        border-radius: 5px; /* Rounded corners */
+        transition: box-shadow 0.3s ease; /* Add transition for box shadow */
+      }
+
+      /* Add box shadow on hover */
+      .back-button:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Box shadow */
+      }
+
+       /* Media query for smaller screens */
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 90%;}
+      }
+      
+      .section {
+        width: calc(50% - 20px); /* Each section occupies half of the container width with some spacing */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Literary Lab</h1>
+      <a class="back-button" href="0MCode.html">Back to Home</a>
+      <div class="bookshelf">
+        <div class="book">
+          <a href="book5_1.html"><img src="book5_1.jpg" alt="Book 1 Cover" width="300" height="400"></a>
+        </div>
+        <div class="book">
+          <a href="book5_2.html"><img src="book5_2.jpg" alt="Book 2 Cover" width="300" height="400"></a>
+        </div>
+        <!-- Add more books -->
+      </div>
+    </div>
+  </body>
+</html>
